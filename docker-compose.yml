@@ -1,11 +1,13 @@
 version: '3'
 
 services:
-  myapp:
-    build: .
-    image: mdyagual/books-api:latest
+  example-clean-architecture:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mdyagual/reactive-music:latest
     ports:
-      - 8080:8080
+      - 8000:8000
     environment:
       MONGODB_URI: "mongodb+srv://mdyagual:mdyagual@clustersofkau.hcyyx.mongodb.net/books-sofka-api?retryWrites=true&w=majority"
     deploy:
