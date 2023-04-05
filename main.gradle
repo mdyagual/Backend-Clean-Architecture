@@ -8,7 +8,7 @@ allprojects {
 
 subprojects {
     apply plugin: 'java'
-    apply plugin: 'jacoco'
+    //apply plugin: 'jacoco'
     apply plugin: 'io.spring.dependency-management'
 
     compileJava.dependsOn validateStructure
@@ -29,9 +29,9 @@ subprojects {
         implementation platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
     }
 
-    test.finalizedBy(project.tasks.jacocoTestReport)
+    //test.finalizedBy(project.tasks.jacocoTestReport)
 
-    jacocoTestReport {
+    /*jacocoTestReport {
         dependsOn test
         reports {
             xml.setRequired true
@@ -39,33 +39,34 @@ subprojects {
             csv.setRequired false
             html.setOutputLocation file("${buildDir}/reports/jacocoHtml")
         }
-    }
+    }*/
 
 }
 
-jacoco {
+/*jacoco {
     toolVersion = "${jacocoVersion}"
     reportsDirectory = file("$buildDir/reports")
-}
+}*/
 
-tasks.register('jacocoMergedReport', JacocoReport) {
+/*tasks.register('jacocoMergedReport', JacocoReport) {
     dependsOn = subprojects.jacocoTestReport
     additionalSourceDirs.setFrom files(subprojects.sourceSets.main.allSource.srcDirs)
     sourceDirectories.setFrom files(subprojects.sourceSets.main.allSource.srcDirs)
-    classDirectories.setFrom files(subprojects.sourceSets.main.output)
-    executionData.setFrom project.fileTree(dir: '.', include: '**/build/jacoco/test.exec')
+    classDirectories.setFrom files(subprojects.sourceSets.main.output)*/
+    /*executionData.setFrom project.fileTree(dir: '.', include: '**//*build/jacoco/test.exec')
     reports {
         xml.setRequired true
         csv.setRequired false
         html.setRequired true
     }
-}
+}*/
 
-tasks.withType(JavaCompile).configureEach {
+/*tasks.withType(JavaCompile).configureEach {
     options.compilerArgs = [
             '-Amapstruct.suppressGeneratorTimestamp=true'
     ]
-}
+}*/
 tasks.named('wrapper') {
     gradleVersion = '7.6'
 }
+

@@ -21,6 +21,7 @@ tasks.register('explodedJar', Copy) {
 jar {
     // To disable the *-plain.jar
     enabled = false
+    destinationDirectory = file("$buildDir/libs")
 }
 
 bootJar {
