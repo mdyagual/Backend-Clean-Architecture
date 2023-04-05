@@ -16,14 +16,6 @@ plugins {
 	id 'jacoco'
 }
 
-task copyLibs(type: Copy) {
-    from 'domain/model/libs'
-    from 'domain/usecases/libs'
-    from 'application/app-service/libs'
-    from 'infrastructure/libs'
-    into 'libs'
-}
-
 
 sonarqube {
     def modules = subprojects.projectDir.collect { "${it.toString().replace(project.projectDir.toString() + "/", "")}" }
