@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ab5247-4731-40cc-9e37-ba2ae14a8c4a" name="Changes" comment="Trying to do deployment again">
+    <list default="true" id="64ab5247-4731-40cc-9e37-ba2ae14a8c4a" name="Changes" comment="Trying to do deployment again #2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,12 +102,12 @@
       <command value="gradle generateUseCase --name=GetByIdUseCase" />
       <command value="gradle generateUseCase --name=SaveUseCase" />
       <command value="gradle vs" />
-      <command value="gradle bootJar" />
       <command value="gradle clean" />
       <command value="gradle build" />
+      <command value="gradle bootJar" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.example-clean-architecture [build]">
+  <component name="RunManager" selected="Gradle.example-clean-architecture [jar]">
     <configuration name="example-clean-architecture [assembleApp]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -215,10 +215,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.example-clean-architecture [jar]" />
         <item itemvalue="Gradle.example-clean-architecture [build]" />
         <item itemvalue="Gradle.example-clean-architecture [clean]" />
         <item itemvalue="Gradle.example-clean-architecture [bootJar]" />
-        <item itemvalue="Gradle.example-clean-architecture [jar]" />
         <item itemvalue="Gradle.example-clean-architecture [assembleApp]" />
       </list>
     </recent_temporary>
@@ -239,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682114981774</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Trying to do deployment again #2">
+      <created>1682116540009</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682116540009</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -258,6 +265,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Trying to do deployment again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to do deployment again" />
+    <MESSAGE value="Trying to do deployment again #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to do deployment again #2" />
   </component>
 </project>
