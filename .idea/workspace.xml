@@ -107,7 +107,7 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.example-clean-architecture [clean]">
+  <component name="RunManager" selected="Gradle.example-clean-architecture [bootJar]">
     <configuration name="example-clean-architecture [assembleApp]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -215,10 +215,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.example-clean-architecture [bootJar]" />
         <item itemvalue="Gradle.example-clean-architecture [jar]" />
         <item itemvalue="Gradle.example-clean-architecture [build]" />
         <item itemvalue="Gradle.example-clean-architecture [clean]" />
-        <item itemvalue="Gradle.example-clean-architecture [bootJar]" />
         <item itemvalue="Gradle.example-clean-architecture [assembleApp]" />
       </list>
     </recent_temporary>
