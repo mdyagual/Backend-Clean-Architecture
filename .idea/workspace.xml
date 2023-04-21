@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ab5247-4731-40cc-9e37-ba2ae14a8c4a" name="Changes" comment="">
+    <list default="true" id="64ab5247-4731-40cc-9e37-ba2ae14a8c4a" name="Changes" comment="Trying to do deployment again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,32 +102,12 @@
       <command value="gradle generateUseCase --name=GetByIdUseCase" />
       <command value="gradle generateUseCase --name=SaveUseCase" />
       <command value="gradle vs" />
+      <command value="gradle bootJar" />
+      <command value="gradle clean" />
+      <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.example-clean-architecture [bootJar]">
-    <configuration name="GetAllUseCaseTest.get" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":usecase:test" />
-            <option value="--tests" />
-            <option value="&quot;ec.com.clean.architecture.example.usecase.getall.GetAllUseCaseTest.get&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.example-clean-architecture [build]">
     <configuration name="example-clean-architecture [assembleApp]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -161,6 +141,27 @@
         <option name="taskNames">
           <list>
             <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="example-clean-architecture [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.example-clean-architecture [build]" />
         <item itemvalue="Gradle.example-clean-architecture [clean]" />
         <item itemvalue="Gradle.example-clean-architecture [bootJar]" />
         <item itemvalue="Gradle.example-clean-architecture [jar]" />
         <item itemvalue="Gradle.example-clean-architecture [assembleApp]" />
-        <item itemvalue="Gradle.GetAllUseCaseTest.get" />
       </list>
     </recent_temporary>
   </component>
@@ -231,6 +232,14 @@
       <option name="presentableId" value="Default" />
       <updated>1679979735488</updated>
     </task>
+    <task id="LOCAL-00001" summary="Trying to do deployment again">
+      <created>1682114981774</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682114981774</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -246,5 +255,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Trying to do deployment again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to do deployment again" />
   </component>
 </project>
